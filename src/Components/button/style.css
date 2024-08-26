@@ -1,0 +1,14 @@
+
+.btn_keyboard{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.btn_circular{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: aqua;
+}
