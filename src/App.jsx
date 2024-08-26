@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Hint from './Hint'
 import Scoreboard from './Score-board'
+import Controller from './Controller'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
       <h1>Word Guessing Game</h1>
       <Hint />
       <Scoreboard/>
+      <Controller />
 
       {/* <Tag label="score"/>
       <Input /> &nbsp;
