@@ -42,6 +42,10 @@ function App() {
     setActiveQuestionIndex(activeQuestionIndex + 1);
   }
 
+  function handleKeyPress(key){
+    console.log("Key pressed", key);
+  }
+
   return (
     <>
       <h1>Word Guessing Game</h1>
@@ -50,7 +54,7 @@ function App() {
         <Scoreboard/>
       </div>
       <Controller showPrev={showPrev} showNext={showNext} handleNext={handleNext} handlePrev={handlePrev} question={question} />
-      <Keyboard />
+      <Keyboard handleKeyPress={handleKeyPress}/>
 
       {/* <Tag label="score"/>
       <Input /> &nbsp;

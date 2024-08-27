@@ -11,7 +11,7 @@ function Button({type=ButtonType.CIRCULAR, label='', onClick=()=>{}}) {
 
     const className = ` btn_${type}`;
 
-  return <button className={className} onClick={onClick}>{label}</button>
+  return <button className={className} onClick={onClick} >{label}</button>
 }
 
 Button.ButtonType = ButtonType;
