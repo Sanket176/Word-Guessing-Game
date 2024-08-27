@@ -3,16 +3,20 @@ import './App.css'
 import Hint from './Hint'
 import Scoreboard from './Score-board'
 import Controller from './Controller'
+import Keyboard from './Keyboard'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <h1>Word Guessing Game</h1>
-      <Hint />
-      <Scoreboard/>
+      <div className='Hint-score'>
+        <Hint />
+        <Scoreboard/>
+      </div>
       <Controller />
+      <Keyboard />
 
       {/* <Tag label="score"/>
       <Input /> &nbsp;
