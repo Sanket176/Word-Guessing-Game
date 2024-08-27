@@ -3,11 +3,13 @@ import './style.css'
 import Button from '../Components/button'
 import Text from '../Components/text'
 
-function Controller() {
+function Controller({question, handleNext, handlePrev, showNext, showPrev}) {
   return <div>
-    <Button type={Button.ButtonType.CIRCULAR} label="Prev" onClick={()=>console.log("prev button clicked")}/>
-    <Text  text="A friut which keeps doctors away" type={Text.StyleType.QUESTION_TITLE} />
-    <Button type={Button.ButtonType.CIRCULAR} label="Next" onClick={()=>console.log("next button clicked")}/>
+
+    {/* conditionally rendering 'prev' and 'next' button */}
+    {showPrev && <Button type={Button.ButtonType.CIRCULAR} label="Prev" onClick={handlePrev}/>}
+    <Text  text={question} type={Text.StyleType.QUESTION_TITLE} />
+    {showNext && <Button type={Button.ButtonType.CIRCULAR} label="Next" onClick={handleNext}/>}
   </div>
 }
 
